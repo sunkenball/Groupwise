@@ -21,4 +21,4 @@ Build an installer with `npm run tauri build`.
 
 1. Bump `version` in `package.json`, `src-tauri/tauri.conf.json` and `src-tauri/Cargo.toml`.
 2. Commit, then tag and push: `git tag v0.2.0 && git push origin main v0.2.0`.
-3. GitHub Actions builds the Windows installers and attaches them to a draft release. Review it on the Releases page and publish.
+3. GitHub Actions builds the Windows installers and publishes them as a release automatically.

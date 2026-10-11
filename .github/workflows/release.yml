@@ -1,4 +1,4 @@
-# Builds the Windows installers and attaches them to a draft GitHub Release.
+# Builds the Windows installers and publishes them as a GitHub Release.
 # Trigger it by pushing a tag that matches the app version, e.g. `git tag v0.1.0 && git push origin v0.1.0`.
 name: Release
 
@@ -45,5 +45,5 @@ jobs:
           tagName: v__VERSION__
           releaseName: Groupwise v__VERSION__
           releaseBody: See the assets below to download and install Groupwise.
-          releaseDraft: true
+          releaseDraft: false
           prerelease: false
